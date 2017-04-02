@@ -1,5 +1,5 @@
 /*Esta es la paleta de colores*/
-p{
+.n{
 	/*azul de las pestañas, pestaña seleccionada*/
 	color: #2D5D74;
 	/*azul de las pestañas, pestaña no seleccionada y color de la franja debajo del titulo*/
@@ -34,3 +34,59 @@ p{
 	font-family: sans-serif;
 	/*los iconos van a salir de font awesome, ya puse un cdn de esa libreria de iconos, ya solo hay que ir a la pagina y sacar el nombre de los iconos que usaremos :)*/
 }
+*{
+	margin: 0px;
+}
+nav{
+	width: 100%;
+	background-color: #174D66;
+}
+nav ul{
+	width: 100%;
+	padding-left: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	display: flex;
+	justify-content: space-between;
+}
+nav ul li{
+	display: inline;
+	width: 33.3%;
+	height: 52px;
+	color: white;
+	font-family: sans-serif;
+	display: flex;
+	font-size: 18px;
+	align-items: center;
+	justify-content: center;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border: 2px solid rgba(255,255,255,0.4);
+	border-bottom: none;
+}
+nav ul li:first-child{
+	background-color: #2D5D74;
+}
+.header{
+	width: 100%;
+	height: 79px;
+	display: flex;
+	font-size: 18px;
+	justify-content: center;
+	align-items: center; 
+}
+.header div{
+	width: 95%;
+	text-align: center;
+	border-bottom: 8px solid #174D66;
+}
+
+
+
+
+
+
+
+
+
+
