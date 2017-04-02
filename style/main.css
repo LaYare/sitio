@@ -1,0 +1,36 @@
+/*Esta es la paleta de colores*/
+p{
+	/*azul de las pestañas, pestaña seleccionada*/
+	color: #2D5D74;
+	/*azul de las pestañas, pestaña no seleccionada y color de la franja debajo del titulo*/
+	color: #174D66;
+	/*color del modal*/
+	color: rgba(45,93,116,0.5);
+	/*color del primer item del menu 'por grado de efectividad'*/
+	color: #215A7C;
+	/*color 'buena practica' menu*/
+	color: #25769E;
+	/*color primer menu desplegado y botones de esta sección*/
+	color: #537CA0;
+	/*color segundo item del menu 'por tipo de prevención, desarrollo y comunitaria'*/
+	color: #008452;
+	/*color menu desplegado y botones de esta sección*/
+	color: #6BA942;
+	/*color tercer item del menu 'por tipo de intervencion'*/
+	color: #008688;
+	/*color dentro del tercer item 'programas y estrategias'*/
+	color: #438D89;
+	/*color menu desplegado y botones de esta seccion*/
+	color: #669489;
+	/*color cuarto item del menu 'por tipo de poblacion objetivo'*/
+	color: #359A82;
+	/*color secciones dentro del cuarto item de menu 'primeria, secundatia y terciaria'*/
+	color: #3EB397;
+	/*coloe menu desplegado y botones de esta seccion */
+	color: #7CBC97;
+	/*encabezados, botones y menu*/
+	font-family: serif;
+	/*texto de informacion*/
+	font-family: sans-serif;
+	/*los iconos van a salir de font awesome, ya puse un cdn de esa libreria de iconos, ya solo hay que ir a la pagina y sacar el nombre de los iconos que usaremos :)*/
+}
