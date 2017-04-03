@@ -3,6 +3,18 @@
 	background-color: #E9EEE9;/*Fondo del texto de Buenas practicas*/
 }
 
+.back-green-navbar {
+	background-color: #008452;
+}
+
+.back-blue02-navbar{
+	background-color: #008688;
+}
+
+.back-green02-navbar{
+	background-color: #359A82;
+}
+
 .background-blue {
 	background-color: #25769E;/*Botones Buenas Practicas*/
 }
@@ -27,6 +39,18 @@
 	background-color: #6CBE99;/*Botones Terciaria*/
 }
 
+.backgroun-green{
+	background-color: #47A147;
+}
+
+.backgroun-blue02{
+	background-color: #438D89;
+}
+
+.background-green02{
+	background-color: #3EB397;
+}
+
 .text-big {
 	font-size: 20px;
 }
@@ -43,7 +67,32 @@
 	line-height: 30px;
 }
 
+
+.practica{
+	background-color: #537CA0;
+}
+
+.prevencion{
+	background-color: #6BA942;
+}
+
+.intervencion{
+	background-color: #669489;
+}
+
+.poblacion{
+	background-color: #7CBC97;
+}
+
+.item-practica{
+	padding-left: 8%;
+}
+.litte-item{
+	padding-left: 15%;
+}
+
 .padding {
 	padding: 0 150px;/*Para segunda seccion*/
 	margin-top: 15px;
 }
+
