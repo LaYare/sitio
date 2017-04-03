@@ -208,6 +208,27 @@ nav ul li{
 	display: none;
 }
 
+/* Círculos de Apoyo y Responsabilidad Toggle */
+.content-center {
+	justify-content: center;
+}
+
+.box-type {
+	width: 150px;
+	height: 30px;
+	padding: 15px 2px 5px 2px;
+	margin: 0 10px 0 10px;
+}
+
+.bar-toggle {
+	padding: 5px 0 5px 15px;
+	margin-bottom: 5px;
+}
+
+.text-bar-toggle {
+	padding: 10px 10px 10px 0;
+}
+
 
 
 
