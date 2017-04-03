@@ -51,6 +51,26 @@
 	background-color: #3EB397;
 }
 
+.background-green-type {
+	background-color: #008452;/*Botones Tipo - Circulos de Apoyo y Responsabilidad*/
+}
+
+.background-blue-type {
+	background-color: #006890;/*Barras - Circulos de Apoyo y Responsabilidad*/
+}
+
+.background-white {
+	background-color: #006890;/*Barras - Circulos de Apoyo y Responsabilidad*/
+}
+
+.text-white {
+	color: #fff;
+}
+
+.text-black {
+	color: #000;
+}
+
 .text-big {
 	font-size: 20px;
 }
@@ -67,12 +87,15 @@
 	line-height: 30px;
 }
 
-<<<<<<< HEAD
+.text-center {
+	text-align: center;
+}
+
 .padding {
 	padding: 0 150px;/*Para segunda seccion*/
 	margin-top: 15px;
 }
-=======
+
 .practica{
 	background-color: #537CA0;
 }
@@ -95,4 +118,8 @@
 .litte-item{
 	padding-left: 15%;
 }
->>>>>>> estilos del navbar
+
+.padding-50 {
+	padding: 0 50px 0 0;
+}
+
