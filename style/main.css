@@ -33,20 +33,23 @@
 	/*texto de informacion*/
 	font-family: sans-serif;
 	/*los iconos van a salir de font awesome, ya puse un cdn de esa libreria de iconos, ya solo hay que ir a la pagina y sacar el nombre de los iconos que usaremos :)*/
+	color: #E9EEE9;
+	/* background gris */
 }
+
 *{
 	margin: 0px;
 }
-body{
-	height: 300vh;
-}
-a{
+
+a {
 	text-decoration: none;
 }
+
 nav{
 	width: 100%;
 	background-color: #174D66;
 }
+
 nav ul{
 	width: 100%;
 	padding-left: 0px;
@@ -55,6 +58,7 @@ nav ul{
 	display: flex;
 	justify-content: space-between;
 }
+
 nav ul li{
 	display: inline;
 	width: 33.3%;
@@ -71,9 +75,11 @@ nav ul li{
 	border-bottom: none;
 	cursor: pointer;
 }
+
 .active01{
 	background-color: #2D5D74;
 }
+
 .header{
 	width: 100%;
 	height: 79px;
@@ -82,6 +88,7 @@ nav ul li{
 	justify-content: center;
 	align-items: center; 
 }
+
 .header div{
 	width: 95%;
 	text-align: center;
@@ -100,6 +107,7 @@ nav ul li{
 	top: 0px;
 	color: white;
 }
+
 .modal{
 	display: flex;
 	flex-direction: column;
@@ -110,26 +118,78 @@ nav ul li{
 	background-color: rgba(23,77,102,0.9);
 	border-radius: 10px;
 }
+
 .modal i{
 	align-self: flex-end;
 	font-size: 2.5em;
 	margin-right: 0.9em;
 	cursor: pointer;
 }
+
 .modal div{
 	width: 65%;
 	height: 75%;
 	font-family: sans-serif;
 }
+
 .modal div big{
 	font-size: 35px;
 	line-height: 80px;
 	font-weight: 500;
 }
+
 .modal div p , .modal div li , .modal div a{
 	font-size: 18px;
 	line-height: 21px;
 	color: white;
+}
+
+.container {
+	display: flex;
+}
+
+.navbar {
+	flex: 30%;
+	color: #fff;
+	margin: 0 20px 0 35px; 
+}
+
+.navbar ul {
+	list-style: none;
+}
+
+.navbar-container {
+	padding: 10px 0 10px 10px;
+	list-style: 20px;
+}
+
+.container-text {
+	flex: 70%;
+}
+
+.container-background {
+	background-color: #E9EEE9;
+	padding: 20px;
+	border-radius: 8px;
+	margin-right: 40px;
+}
+
+.container-box {
+	display: flex;
+	margin-right: 40px;
+	padding: 10px;
+}
+
+.container-box .box {
+	flex: 1;
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	box-shadow: 5px 5px 10px #727576;
+	border-radius: 8px;
+	padding: 15px;
+	color: #fff;
+	margin: 0 10px 0 10px;
 }
 
 .show-pop{

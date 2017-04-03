@@ -1,0 +1,23 @@
+.back-blue-navbar {
+	background-color: #2D5D74;
+}
+
+.background-blue {
+	background-color: #25769E;
+}
+
+.text-big {
+	font-size: 20px;
+}
+
+.text-medium{
+	font-size: 18px;
+}
+
+.text-small {
+	font-size: 13px;
+}
+
+.text--line {
+	line-height: 30px;
+}
