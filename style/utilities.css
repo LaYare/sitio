@@ -3,6 +3,9 @@
 	background-color: #E9EEE9;/*Fondo del texto de Buenas practicas*/
 }
 
+.back-blue-navbar{
+	background-color: #215A7C;
+}
 .back-green-navbar {
 	background-color: #008452;
 }
@@ -67,12 +70,10 @@
 	line-height: 30px;
 }
 
-<<<<<<< HEAD
 .padding {
 	padding: 0 150px;/*Para segunda seccion*/
 	margin-top: 15px;
 }
-=======
 .practica{
 	background-color: #537CA0;
 }
@@ -95,4 +96,3 @@
 .litte-item{
 	padding-left: 15%;
 }
->>>>>>> estilos del navbar
