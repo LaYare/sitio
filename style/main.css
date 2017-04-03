@@ -168,7 +168,6 @@ nav ul li{
 }
 
 .container-background {
-	background-color: #E9EEE9;
 	padding: 20px;
 	border-radius: 8px;
 	margin-right: 40px;
@@ -178,6 +177,7 @@ nav ul li{
 	display: flex;
 	margin-right: 40px;
 	padding: 10px;
+	cursor: pointer;
 }
 
 .container-box .box {
