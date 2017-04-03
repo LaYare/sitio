@@ -9,9 +9,9 @@
 <body>
 	<nav>
 		<ul>
-			<li><a>¿QUÉ ES?</a></li>
-			<li><a>CLASIFICACIÓN</a></li>
-			<li><a>METODOLOGÍA</a></li>
+			<li onclick="que();">¿QUÉ ES?</li>
+			<li onclick="clasificacion();">CLASIFICACIÓN</li>
+			<li onclick="metodologia();">METODOLOGÍA</li>
 		</ul>
 	</nav>
 	<section>
@@ -44,7 +44,73 @@
 				</p>
 			</div>
 		</div>
+
+		<!-- modales -->
+		<div class="container-modal hidden-pop" id="que">
+			<div class="modal">
+				<i class="fa fa-times" onclick="que();" aria-hidden="true"></i>
+				<div>
+					<big>¿Qué es?</big>
+					<p>
+						El Banco de Prácticas sobre Prevención del Delito y la Violencia es una herramienta que sintetiza la evidencia empírica recopilada sobre intervenciones de prevención del delito y la violencia implementadas a nivel internacional. Nuestro objetivo es que estas experiencias puedan servir como guía para la formulación de nuevas acciones enfocadas a resolver el problema de inseguridad que enfrentamos, actualmente, en nuestro país.
+					</p>
+					<br>
+					<p>
+						El Banco está dirigido a cualquier persona interesada en el tema, pero especialmente a los servidores públicos, tomadores de decisiones, especialistas, académicos, organizaciones de la sociedad civil y ciudadanos involucrados en la formulación de políticas de prevención.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-modal hidden-pop" id="clasificacion">
+			<div class="modal">
+				<i class="fa fa-times" onclick="clasificacion();" aria-hidden="true"></i>
+				<div>
+					<big>Clasificación</big>
+					<p>
+						El Banco se integra por intervenciones de prevención del delito y la violencia que han sido evaluadas rigurosamente (evaluaciones de impacto experimentales y cuasi-experimentales). Las prácticas están clasificadas en cuatro categorías:
+					</p>
+					<br>
+					<ul>
+						<li>Por grado de efectividad: mide el efecto real que tienen los programas sobre el problema de inseguridad que se pretenda atender.</li>
+						<li>Por tipo de intervención: analiza las intervenciones de manera individual (programa) o una categoría general de intervenciones (estrategia).</li>
+						<li>Por tipo de prevención: identifica qué tipo factores de riesgo, factores de protección, estructuras sociales u oportunidades para el delito busca atender el programa.</li>
+						<li>Por tipo de población objetivo: representa el sector de la población a la cual está dirigido el programa.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container-modal hidden-pop" id="metodologia">
+			<div class="modal">
+				<i class="fa fa-times" onclick="metodologia(); "aria-hidden="true"></i>
+				<div>
+					<big>Metodología</big>
+					<p>
+						El Banco de Prácticas de Prevención se elaboró en cinco etapas:
+					</p>
+					<br>
+					<ol>
+						<li>Búsqueda exhaustiva de evaluaciones sobre programas y estrategias preventivas en revistas especializadas, sistemas de información y bases de buenas prácticas.</li>
+						<li>Selección de intervenciones que cumplían con los siguientes criterios: definición del problema, de su población objetivo, sólido método de evaluación, indicadores y resultados.</li>
+						<li>Sistematización de la información.</li>
+						<li>Clasificación de las intervenciones por grado de efectividad, tipo de intervención, tipo de prevención y tipo de población objetivo.</li>
+						<li>Presentación de la información en nuestro micrositio de Prevención.</li>
+					</ol>
+					<br>
+					<p>Consulta el documento completo de la <a href=""><b>metodología aquí.</b></a></p>
+				</div>
+			</div>
+		</div>
 	</section>
 	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+

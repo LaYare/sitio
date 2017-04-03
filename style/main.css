@@ -5,7 +5,7 @@
 	/*azul de las pestañas, pestaña no seleccionada y color de la franja debajo del titulo*/
 	color: #174D66;
 	/*color del modal*/
-	color: rgba(45,93,116,0.5);
+	color: rgba(23,77,102,0.9);
 	/*color del primer item del menu 'por grado de efectividad'*/
 	color: #215A7C;
 	/*color 'buena practica' menu*/
@@ -37,6 +37,12 @@
 *{
 	margin: 0px;
 }
+body{
+	height: 300vh;
+}
+a{
+	text-decoration: none;
+}
 nav{
 	width: 100%;
 	background-color: #174D66;
@@ -63,8 +69,9 @@ nav ul li{
 	border-top-left-radius: 10px;
 	border: 2px solid rgba(255,255,255,0.4);
 	border-bottom: none;
+	cursor: pointer;
 }
-nav ul li:first-child{
+.active01{
 	background-color: #2D5D74;
 }
 .header{
@@ -81,7 +88,56 @@ nav ul li:first-child{
 	border-bottom: 8px solid #174D66;
 }
 
+.container-modal{
+	background-color: rgba(0,0,0,0.5);
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	position: fixed;
+  z-index: 999;
+	justify-content: center;
+	align-items: center;
+	top: 0px;
+	color: white;
+}
+.modal{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 95%;
+	height: 70vh;
+	background-color: rgba(23,77,102,0.9);
+	border-radius: 10px;
+}
+.modal i{
+	align-self: flex-end;
+	font-size: 2.5em;
+	margin-right: 0.9em;
+	cursor: pointer;
+}
+.modal div{
+	width: 65%;
+	height: 75%;
+	font-family: sans-serif;
+}
+.modal div big{
+	font-size: 35px;
+	line-height: 80px;
+	font-weight: 500;
+}
+.modal div p , .modal div li , .modal div a{
+	font-size: 18px;
+	line-height: 21px;
+	color: white;
+}
 
+.show-pop{
+	display: initial;
+}
+.hidden-pop{
+	display: none;
+}
 
 
 
