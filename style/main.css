@@ -221,8 +221,11 @@ nav ul li{
 }
 
 .bar-toggle {
-	padding: 5px 0 5px 15px;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 15px 5px 15px;
 	margin-bottom: 5px;
+	cursor: pointer;
 }
 
 .text-bar-toggle {
