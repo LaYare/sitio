@@ -11,7 +11,7 @@
 /*menu de abajo*/
 
   function text() {
-    document.getElementById('text').classList.toggle("hidden-pop");
+    document.getElementById('hbhb11').classList.toggle("hidden-pop");
   }
 
   function textTwo() {
@@ -41,4 +41,8 @@
   function textEight() {
     document.getElementById('textEight').classList.toggle("hidden-pop");
   }
+
+
+
+
 
