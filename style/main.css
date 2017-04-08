@@ -206,6 +206,7 @@ nav ul li{
 }
 .hidden-pop{
 	display: none;
+	cursor: pointer;
 }
 
 /* Círculos de Apoyo y Responsabilidad Toggle */

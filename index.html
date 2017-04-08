@@ -27,57 +27,58 @@
 		<div class="container">
 			<div class="navbar">
 				<ul class="navbar-container">
-					<li class="back-blue-navbar text-big">
-						<i class="fa fa-window-minimize" aria-hidden="true"></i>
+					<li class="back-blue-navbar text-big" onclick="efectividad();">
+						<i id="iconoUno" class="fa fa-plus" aria-hidden="true"></i>
 						Por grado de efectividad
+						<i class="fa fa-file-text-o float-r" aria-hidden="true"></i>
 					</li>
-					<ul class="practica">
-						<li class="text-medium background-blue item-practica">
-							<i class="fa fa-window-minimize" aria-hidden="true"></i>
+					<ul class="practica hidden-pop" id="efectividad">
+						<li class="text-medium background-blue item-practica" onclick="efectividadUno();">
+							<i id="iconoDos" class="fa fa-plus" aria-hidden="true"></i>
 							Buena práctica
 						</li>
-						<ul>
-							<li class="litte-item text-small text--line">Círculos de Apoyo y Responsabilidad</li>
+						<ul id="efectividadUno" class="hidden-pop">
+							<li class="litte-item text-small text--line" onclick="circulos();">Círculos de Apoyo y Responsabilidad</li>
 							<li class="litte-item text-small text--line">Convertirse en un hombre</li>
 							<li class="litte-item text-small text--line">Hermanos mayores, hermanas mayores de América</li>
 							<li class="litte-item text-small text--line">Intervención en los mercados de drogas de High Point</li>
 							<li class="litte-item text-small text--line">Programas anti-bullying</li>
 						</ul>
-						<li class="text-medium background-blue item-practica">
-							<i class="fa fa-window-minimize" aria-hidden="true"></i>
+						<li class="text-medium background-blue item-practica" onclick="efectividadDos();">
+							<i id="iconoTres" class="fa fa-plus" aria-hidden="true"></i>
 							Práctica promisoria
 						</li>
-						<ul>
-							<li class=" litte-item text-small text--line">Estrategias de disuasión focalizada</li>
+						<ul id="efectividadDos" class="hidden-pop">
+							<li class=" litte-item text-small text--line" onclick="focalizada();">Estrategias de disuasión focalizada</li>
 							<li class="litte-item text-small text--line">Modelo de Michigan para la Salud</li>
 							<li class="litte-item text-small text--line">Programas escolares universales</li>
 						</ul>
-						<li class="text-medium background-blue item-practica">
-							<i class="fa fa-window-minimize" aria-hidden="true"></i>
+						<li class="text-medium background-blue item-practica" onclick="efectividadTres();">
+							<i id="iconoCuatro" class="fa fa-plus" aria-hidden="true"></i>
 							Mala práctica
 						</li>
-						<ul>
-							<li class="litte-item text-small text--line">Programas de concientización juvenil</li>
+						<ul id="efectividadTres" class="hidden-pop">
+							<li class="litte-item text-small text--line" onclick="juvenil()">Programas de concientización juvenil</li>
 						</ul>
 					</ul>
-					<li class="text-big back-green-navbar">
-						<i class="fa fa-plus" aria-hidden="true"></i>
+					<li class="text-big back-green-navbar" onclick="prevencion();">
+						<i id="iconoCinco" class="fa fa-plus" aria-hidden="true"></i>
 						Por tipo de prevención
-						<i class="fa fa-random" aria-hidden="true"></i>
+						<i class="fa fa-random float-r" aria-hidden="true"></i>
 					</li>
-					<ul class="prevencion">
-						<li class="text-medium backgroun-green item-practica">
-							<i class="fa fa-window-minimize" aria-hidden="true"></i>
+					<ul class="prevencion hidden-pop" id="prevencion">
+						<li class="text-medium backgroun-green item-practica"  onclick="prevencionUno();">
+							<i id="iconoSeis" class="fa fa-plus" aria-hidden="true"></i>
 							Situacional
 						</li>
-						<ul>
+						<ul id="prevencionUno" class="hidden-pop">
 							<li class="litte-item text-small text--line">(Todavía no hay para esta categoría)</li>
 						</ul>
-						<li class="text-medium backgroun-green item-practica">
-							<i class="fa fa-window-minimize" aria-hidden="true"></i>
+						<li class="text-medium backgroun-green item-practica" onclick="prevencionDos();">
+							<i id="iconoSiete" class="fa fa-plus" aria-hidden="true"></i>
 							Desarrollo
 						</li>
-						<ul>
+						<ul id="prevencionDos" class="hidden-pop">
 							<li class=" litte-item text-small text--line">Convertirse en un hombre</li>
 							<li class="litte-item text-small text--line">Hermanos mayores, hermanas mayores de América</li>
 							<li class="litte-item text-small text--line">Modelo de Michigan para la salud</li>
@@ -85,81 +86,79 @@
 							<li class="litte-item text-small text--line">Programas de concientización juvenil</li>
 							<li class="litte-item text-small text--line">Programas escolares universales</li>
 						</ul>
-						<li class="text-medium backgroun-green item-practica">
-							<i class="fa fa-window-minimize" aria-hidden="true"></i>
+						<li class="text-medium backgroun-green item-practica" onclick="prevencionTres();">
+							<i id="iconoOcho" class="fa fa-plus" aria-hidden="true"></i>
 							Comunitaria
 						</li>
-						<ul>
+						<ul id="prevencionTres" class="hidden-pop">
 							<li class="litte-item text-small text--line">Círculos de Apoyo y Responsabilidad</li>
 							<li class="litte-item text-small text--line">Estrategias e disuasión focalizada</li>
 							<li class="litte-item text-small text--line">Intervención en los mercados de drogas de High Point</li>
 						</ul>
 					</ul>
-					<li class="text-big back-blue02-navbar">
-						<i class="fa fa-plus" aria-hidden="true"></i>
+					<li class="text-big back-blue02-navbar" onclick="intervencion();">
+						<i id="iconoNueve" class="fa fa-plus" aria-hidden="true"></i>
 						Por tipo de intervención
-						<i class="fa fa-thumb-tack" aria-hidden="true"></i>
+						<i class="fa fa-thumb-tack float-r float-r rotate" aria-hidden="true"></i>
 					</li>
-					<ul class="intervencion">
-						<li class="text-medium backgroun-blue02 item-practica">
-							<i class="fa fa-window-minimize" aria-hidden="true"></i>
+					<ul class="intervencion hidden-pop" id="intervencion">
+						<li class="text-medium backgroun-blue02 item-practica" onclick="intervencionUno();">
+							<i id="iconoDiez" class="fa fa-plus" aria-hidden="true"></i>
 							Programas
 						</li>
-						<ul>
+						<ul id="intervencionUno" class="hidden-pop">
 							<li class="litte-item text-small text--line">Convertirse en un hombre</li>
 							<li class="litte-item text-small text--line">Convertirse en un hombre</li>
 							<li class="litte-item text-small text--line">Hermanos mayores, hermanas mayores de América</li>
 							<li class="litte-item text-small text--line">Intervención en los mercados de drogas de High Point</li>
 							<li class="litte-item text-small text--line">Programas anti-bullying</li>
 						</ul>
-						<li class="text-medium backgroun-blue02 item-practica">
-							<i class="fa fa-window-minimize" aria-hidden="true"></i>
+						<li class="text-medium backgroun-blue02 item-practica" onclick="intervencionDos();">
+							<i id="iconoOnce" class="fa fa-plus" aria-hidden="true"></i>
 							Práctica promisoria
 						</li>
-						<ul>
+						<ul id="intervencionDos" class="hidden-pop">
 							<li class=" litte-item text-small text--line">Estrategias de disuasión focalizada</li>
 							<li class="litte-item text-small text--line">Modelo de Michigan para la Salud</li>
 							<li class="litte-item text-small text--line">Programas escolares universales</li>
 						</ul>
-						<li class="text-medium backgroun-blue02 item-practica">
-							<i class="fa fa-window-minimize" aria-hidden="true"></i>
+						<li class="text-medium backgroun-blue02 item-practica" onclick="intervencionTres();">
+							<i id="iconoDoce" class="fa fa-plus" aria-hidden="true"></i>
 							Mala práctica
 						</li>
-						<ul>
-							<li class="litte-item text-small text--line">Programas de concientización juvenil</li>
+						<ul id="intervencionTres" class="hidden-pop" >
+							<li class="litte-item text-small text--line" onclick="juvenil();">Programas de concientización juvenil</li>
 						</ul>
 					</ul>
-					<li class="text-big back-green02-navbar">
-						<i class="fa fa-plus" aria-hidden="true"></i>
+					<li class="text-big back-green02-navbar" onclick="poblacion();">
+						<i id="iconoTrece" class="fa fa-plus" aria-hidden="true"></i>
 						Por tipo de población objetivo
-						<i class="fa fa-users" aria-hidden="true"></i>
+						<i class="fa fa-users float-r" aria-hidden="true"></i>
 					</li>
-					<ul class="poblacion">
-						<li class="text-medium background-green02 item-practica">
-							<i class="fa fa-window-minimize" aria-hidden="true"></i>
-							Buena práctica
+					<ul class="poblacion hidden-pop" id="poblacion">
+						<li class="text-medium background-green02 item-practica" onclick="poblacionUno();">
+							<i id="iconoCatorce" class="fa fa-plus" aria-hidden="true"></i>
+							Primaria
 						</li>
-						<ul>
-							<li class="litte-item text-small text--line">Círculos de Apoyo y Responsabilidad</li>
-							<li class="litte-item text-small text--line">Convertirse en un hombre</li>
-							<li class="litte-item text-small text--line">Hermanos mayores, hermanas mayores de América</li>
-							<li class="litte-item text-small text--line">Intervención en los mercados de drogas de High Point</li>
-							<li class="litte-item text-small text--line">Programas anti-bullying</li>
+						<ul id="poblacionUno" class="hidden-pop">
+							<li class="litte-item text-small text--line">
+								(Todavía no hay para esta categoría)
+							</li>
 						</ul>
-						<li class="text-medium background-green02 item-practica">
-							<i class="fa fa-window-minimize" aria-hidden="true"></i>
-							Práctica promisoria
+						<li class="text-medium background-green02 item-practica" onclick="poblacionDos();">
+							<i id="iconoQuince" class="fa fa-plus" aria-hidden="true"></i>
+							Secundaria
 						</li>
-						<ul>
+						<ul id="poblacionDos" class="hidden-pop">
 							<li class=" litte-item text-small text--line">Estrategias de disuasión focalizada</li>
 							<li class="litte-item text-small text--line">Modelo de Michigan para la Salud</li>
 							<li class="litte-item text-small text--line">Programas escolares universales</li>
 						</ul>
-						<li class="text-medium background-green02 item-practica">
-							<i class="fa fa-window-minimize" aria-hidden="true"></i>
-							Mala práctica
+						<li class="text-medium background-green02 item-practica" onclick="poblacionTres();">
+							<i id="iconoDiezSeis" class="fa fa-plus" aria-hidden="true"></i>
+							Terciaria
 						</li>
-						<ul>
+						<ul id="poblacionTres" class="hidden-pop">
 							<li class="litte-item text-small text--line">Programas de concientización juvenil</li>
 						</ul>
 					</ul>
@@ -194,7 +193,7 @@
 					</div>
 					<br>
 					<div class="container-box">
-						<div class="box background-blue">
+						<div class="box background-blue" onclick="circulos()">
 							<p class="text-small">
 								Círculos de Apoyo
 								y Responsabilidad
@@ -228,173 +227,8 @@
 						</div>
 					</div>
 				</div>
-<!-- Desarrollo -->
-				<div class="container-text hidden-pop">
-					<div class="container-background background-text-des">
-						<h2>Desarrollo</h2>
-						<br>
-						<p class="text-medium">
-							Intervenciones dirigidas a atender las causas de raíz de la delincuencia que inciden sobre el
-							comportamiento del individuo a lo largo de su vida (México Evalúa, 2015; Tremblay y Craig,
-							1995). Se busca reducir los factores de riesgo, sobre todo los psicológicos y socioeconómicos,
-							que motivan a que una persona inicie o reincida en conducta delictivas. Algunos ejemplos de
-							estos factores son: violencia intrafamiliar, actitudes antisociales, consumo de drogas, desempleo
-							y desigualdad, entre otros.
-							<br>
-							<br>
-							<br>
-							<br>
-						</p>
-						<br>
-					</div>
-					<br>
-					<div class="container-box padding">
-						<div class="box background-green">
-							<p class="text-small">
-								Convertirse en un
-								hombre
-							</p>
-						</div>
-						<div class="box background-green">
-							<p class="text-small">
-								Hermanos mayores,
-								hermanas mayores
-								de América 
-							</p>
-						</div>
-						<div class="box background-green">
-							<p class="text-small">
-								Modelo de
-								Michigan para la
-								Salud 
-							</p>
-						</div>
-					</div>
-					<div class="container-box padding">
-						<div class="box background-green">
-							<p class="text-small">
-								Programas
-								anti-bullying 
-							</p>
-						</div>
-						<div class="box background-green">
-							<p class="text-small">
-								Programas de
-								concientización
-								juvenil 
-							</p>
-						</div>
-						<div class="box background-green">
-							<p class="text-small">
-								Programas
-								escolares
-								universales 
-							</p>
-						</div>
-					</div>
-				</div>
-<!-- Programas -->
-				<div class="container-text hidden-pop">
-					<div class="container-background background-text-des">
-						<h2>Programas</h2>
-						<br>
-						<p class="text-medium">
-							Intervenciones basadas en lineamientos específicos (reglas de operación, asignación de
-							recursos, metodología de ejecución) que tienen un objetivo central previamente definido y que
-							se implementan en un contexto determinado. Por ejemplo, el programa Convertirse en un
-							hombre busca cambiar el comportamiento violento de los jóvenes de algunas escuelas públicas
-							de Chicago, mediante actividades de reflexión, desarrollo de habilidades e inteligencia
-							emocional.
-							<br>
-							<br>
-							<br>
-							<br>
-						</p>
-						<br>
-					</div>
-					<br>
-					<br>
-					<br>
-					<br>
-					<div class="container-box">
-						<div class="box background-green-pro">
-							<p class="text-small">
-								Convertirse en un
-								hombre
-							</p>
-						</div>
-						<div class="box background-green-pro">
-							<p class="text-small">
-								Hermanos mayores,
-								hermanas mayores
-								de América
-							</p>
-						</div>
-						<div class="box background-green-pro">
-							<p class="text-small">
-								Modelo de
-								Michigan para la
-								Salud 
-							</p>
-						</div>
-						<div class="box background-green-pro">
-							<p class="text-small">
-								Círculos de Apoyo y
-								Responsabilidad 
-							</p>
-						</div>
-						<div class="box background-green-pro">
-							<p class="text-small">
-								Intervención en los
-								mercados de drogas
-								de High Point
-							</p>
-						</div>
-					</div>
-				</div>
-<!-- Terciaria -->
-				<div class="container-text hidden-pop">
-					<div class="container-background background-text-ter">
-						<h2>Terciaria</h2>
-						<br>
-						<p class="text-medium">
-							Intervenciones que buscan atender a los individuos que han cometido actos violentos o se
-							encuentran recluidos por algún delito, para evitar su reincidencia. También, atienden a las
-							víctimas de delitos y violencia, con el objetivo de evitar su revictimización o que se conviertan
-							en victimarios.
-						</p>
-						<br>
-					</div>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<div class="container-box padding">
-						<div class="box background-green-ter">
-							<p class="text-small">
-								Círculos de Apoyo
-								y Responsabilidad  
-							</p>
-						</div>
-						<div class="box background-green-ter">
-							<p class="text-small">
-								Estrategias de
-								disuasión
-								focalizada 
-							</p>
-						</div>
-						<div class="box background-green-ter">
-							<p class="text-small">
-								Programas de
-								concientización
-								juvenil 
-							</p>
-						</div>
-					</div>
-				</div>
 <!-- Círculos de Apoyo y Responsabilidad -->
-				<div class="container-text hidden-pop">
+				<div class="container-text hidden-pop" id="circulos-de-apoyo">
 					<div class="container-background text-center">
 						<h2>Círculos de Apoyo y Responsabilidad</h2>
 						<br>
@@ -415,17 +249,17 @@
 							</div>
 						</div>
 						<div class="container padding-50 content-center">
-							<div class="box-type text-black background-text-good">
-								Grado de efectividad
+							<div class="box-type text-black background-text-good good-pract">
+								Buean práctica
 							</div>
 							<div class="box-type text-black background-text-good">
-								Tipo de prevención 
+								Comunitaria 
 							</div>
 							<div class="box-type text-black background-text-good">
-								Tipo de intervención
+								Programa
 							</div>
 							<div class="box-type text-black background-text-good">
-								Tipo de prevención 
+								Terciaria: aresores sexuales 
 							</div>
 						</div>
 						<br>
@@ -565,6 +399,525 @@
 							<p>
 								Duwe, G. (2012). Can Circles of Support and Accountability (COSA) Work in the United States? Preliminary Results from a Randomized
 								Experiment in Minnesota. Sexual Abuse: A Journal of Research and Treatment. 25 (2), 143-165. 
+							</p>
+						</div>
+					</div>
+				</div>
+<!-- Estrategias de disuación focalizada -->
+				<div class="container-text hidden-pop" id="focalizada">
+					<div class="container-background text-center">
+						<h2>Círculos de Apoyo y Responsabilidad</h2>
+						<br>
+						<br>
+						<br>
+						<div class="container padding-50 content-center">
+							<div class="box-type text-white background-blue">
+								Grado de efectividad
+							</div>
+							<div class="box-type text-white background-green-type">
+								Tipo de prevención 
+							</div>
+							<div class="box-type text-white background-green-pro">
+								Tipo de intervención
+							</div>
+							<div class="box-type text-white background-green-ter">
+								Tipo de prevención 
+							</div>
+						</div>
+						<div class="container padding-50 content-center">
+							<div class="box-type text-black background-text-good promis-pract">
+								Práctica promisoria
+							</div>
+							<div class="box-type text-black background-text-good">
+								Comunitaria 
+							</div>
+							<div class="box-type text-black background-text-good">
+								Estrategia
+							</div>
+							<div class="box-type text-black background-text-good">
+								Secundaria: pandilleros y distribuidores de droga.
+								<br>
+								Terciaria: reincidentes
+							</div>
+						</div>
+						<br>
+					</div>
+					<br>
+					<br>
+					<br>
+					<div class="padding-50">
+						<div class="background-blue-type text-white bar-toggle" onclick="textt()">
+							Objetivo <i class="fa fa-chevron-circle-down" aria-hidden="true"></i> 
+						</div>
+						<p class="text-bar-toggle hidden-pop" id="textt">
+							Reducir los niveles de reincidencia de los agresores sexuales mediante sesiones de apoyo psicológico, emocional y social, para que se
+							reintegren exitosamente a su comunidad. En este sentido, los agresores sexuales desarrollan un estilo de vida productivo, responsable
+							y seguro, y fortalecen las relaciones con los integrantes de su localidad: familiares, vecinos y amigos. Las acciones son coordinadas por
+							voluntarios de la comunidad y especialistas. 
+						</p>
+						<div class="background-blue-type text-white bar-toggle" onclick="textTwoo()">
+							Fundamento teórico <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</div>
+						<p class="text-bar-toggle hidden-pop" id="textTwoo">
+							Durante décadas, se han diseñado e implementado programas para reducir la reincidencia de los agresores sexuales. Una de las
+							estrategias más comunes se basa en la justicia restaurativa: garantizar una reinserción exitosa de los agresores sexuales, mediante
+							apoyo social para que fortalezcan su sentimiento de pertenencia a la comunidad y puedan encontrar un empleo, un lugar donde vivir y
+							tratamiento psicológico. Si estos factores se combinan con un seguimiento continuo del comportamiento y las acciones de los
+							beneficiarios, se incrementa la probabilidad de reducir los niveles de reincidencia delictiva, aislamiento social y rechazo por parte de la
+							sociedad. Es decir, el éxito de este programa se basa en la combinación de apoyo social y seguimiento puntual del proceso de
+							reinserción social.  
+						</p>
+						<div class="background-blue-type text-white bar-toggle" onclick="textThreee()">
+							Factores de riesgo que atiende <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</div>
+						<p class="text-bar-toggle hidden-pop" id="textThreee">
+							Falta de oportunidades laborales, discriminación, actitudes anti-sociales, aislamiento social.  
+						</p>
+						<div class="background-blue-type text-white bar-toggle" onclick="textFourr()">
+							¿Cómo se hace? <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</div>
+						<div class="text-bar-toggle hidden-pop" id="textFourr">
+							<p>
+								Este programa surgió en Canadá en 1994 y ha sido replicado en algunas regiones de Estados Unidos, Reino Unido, Irlanda y Holanda.
+								El Círculo de Apoyo y Responsabilidad se integra por el agresor sexual que se reintegra a la sociedad después de haber cumplido su
+								condena, a quien se le conoce como miembro central (core member), y por varios voluntarios de la comunidad (de cuatro a siete) que
+								están interesados en brindar apoyo social. La participación de los integrantes del círculo es voluntaria, pero se formaliza mediante un
+								acuerdo escrito que establece las responsabilidades tanto del miembro central como de los voluntarios. 
+							</p>
+							<br>
+							<p>
+								Durante los primeros meses del programa (del 1° al 3° mes), al menos un voluntario del círculo se reúne diariamente con el miembro
+								central, y los demás cada semana. El objetivo es que los voluntarios brinden apoyo al miembro central para que pueda afrontar de
+								mejor manera su reinserción social y asuma la responsabilidad de sus actos. 
+							</p>
+							<br>
+							<p>
+								Entre las acciones que los voluntarios realizan, destacan las siguientes: buscar tratamiento psicológico y social para el agresor, mediar
+								con los miembros de la comunidad para evitar cualquier tipo de discriminación o rechazo, dar seguimiento al progreso de reinserción
+								social, acompañar al miembro central en situaciones de emergencia, confrontar las actitudes antisociales del miembro central, y
+								celebrar sus logros profesionales y laborales. El programa tiene una duración aproximada de 12 meses. 
+							</p>
+							<br>
+							<p>
+								Los voluntarios son capacitados constantemente por especialistas y trabajan coordinadamente con psicólogos, asociaciones
+								comunitarias, trabajadores sociales, policías y tribunales. Los organizadores pueden reclutar a los voluntarios en asociaciones civiles y
+								religiosas de la comunidad o mediante convocatorias abiertas. Por ejemplo, los voluntarios del programa en Michigan son
+								principalmente estudiantes de universidades y escuelas públicas. 
+							</p>
+						</div>
+						<div class="background-blue-type text-white bar-toggle" onclick="textFivee()">
+							¿Quién lo implementa? <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</div>
+						<p class="text-bar-toggle hidden-pop" id="textFivee">
+							Gobierno y asociaciones civiles 
+						</p>
+						<div class="background-blue-type text-white bar-toggle" onclick="textSixx()">
+							¿Cómo se evalúa? <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</div>
+						<div class="text-bar-toggle hidden-pop" id="textSixx">
+							<p>
+								Wilson, Picheca y Prinzo (2005) realizaron una evaluación del proyecto piloto implementado en Ontario, Canadá. Posteriormente,
+								Wilson, Cortoni y McWhinnie (2009) midieron el efecto del programa nacional ejecutado en Canadá. 
+							</p>
+							<br>
+							<p>
+								Wilson et. al. (2005) utilizaron un diseño cuasi-experimental, comparando un grupo de 60 agresores sexuales beneficiarios del
+								programa (grupo de tratamiento) y un grupo de 60 agresores que no recibieron el programa (grupo de control). Para hacer comprables
+								ambos grupos, los autores se basaron en el riesgo de reincidencia, el estatus de supervisión y la participación de los agresores en algún
+								tipo de tratamiento. 
+							</p>
+							<br>
+							<p>
+								En la evaluación nacional, Wilson et. al. (2009) midieron los efectos del programa comparando 44 beneficiarios y 44 no beneficiarios de
+								los COSA con base en las variables de riesgo de reincidencia, fecha y lugar de la reinserción social, y participación previa del agresor en
+								algún tipo de tratamiento. Ambas evaluaciones encontraron una reducción significativa en los niveles de reincidencia de agresores
+								sexuales.
+							</p>
+							<br>
+							<p>
+								Por su parte, Duwe (2012) realizó una evaluación aleatoria del programa COSA implementado en Michigan, Estados Unidos. El autor
+								comparó los resultados de un grupo de 31 beneficiarios y un grupo de 31 no beneficiarios del programa. Para evaluar los índices de
+								reincidencia, se midieron las siguientes variables: 1) nuevo arresto, 2) nueva condena, 3) reinserción a prisión por un nuevo delito, 4)
+								reinserción a prisión por una falta administrativa y 5) reinserción a prisión por un nuevo delito y/o falta administrativa. 
+							</p>
+						</div>
+						<div class="background-blue-type text-white bar-toggle" onclick="textSevenn()">
+							Resultados <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</div>
+						<div class="text-bar-toggle hidden-pop" id="textSevenn">
+							<p>
+								Wilson et. al. (2005) encontraron que los participantes del programa piloto COSA tuvieron tasas significativamente más bajas de
+								reincidencia general, sexual y de violencia que el grupo de control. Específicamente, el programa redujo 70% la reincidencia sexual, 57%
+								la reincidencia violenta y 35% la reincidencia general.
+							</p>
+							<br>
+							<p>
+								Por su parte, la evaluación del programa nacional (Wilson et. al., 2009) muestra una reducción de 83% de la reincidencia sexual, 73% de la reincidencia violenta y 72% de la reincidencia general con respecto al grupo de control. 
+							</p>
+							<br>
+							<p>
+								La evaluación del programa implementado en Michigan señala una disminución significativa en los indicadores de reincidencia. Sobre
+								todo, destaca que ningún beneficiario del programa fue re-aprehendido por cometer un nuevo delito sexual.
+							</p>
+						</div>
+						<div class="background-blue-type text-white bar-toggle" onclick="textEightt()">
+							Fuentes de información <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</div>
+						<div class="text-bar-toggle hidden-pop" id="textEightt">
+							<p>
+								Wilson, R., J. Picheca y M. Prinzo (2005). Circles of Support & Accountability: An Evaluation of the Pilot Project in South-Central Ontario.
+								Correctional Service of Canada. Consultado en: http://www.csc-scc.gc.ca/research/092/r168_e.pdf 
+							</p>
+							<br>
+							<p>
+								Wilson, R., F. Cortoni y A. McWhinnie (2009). Circles of Support & Accountability: A Canadian National Replication of Outcome Findings.
+								Sexual Abuse: A Journal of Research and Treatment. 21(4), 412-430. 
+							</p>
+							<br>
+							<p>
+								Duwe, G. (2012). Can Circles of Support and Accountability (COSA) Work in the United States? Preliminary Results from a Randomized
+								Experiment in Minnesota. Sexual Abuse: A Journal of Research and Treatment. 25 (2), 143-165. 
+							</p>
+						</div>
+					</div>
+				</div>
+<!-- Programas de concientización juvenil -->
+				<div class="container-text hidden-pop" id="juvenil">
+					<div class="container-background text-center">
+						<h2>Programas de concientización juvenil</h2>
+						<br>
+						<br>
+						<br>
+						<div class="container padding-50 content-center">
+							<div class="box-type text-white background-blue">
+								Grado de efectividad
+							</div>
+							<div class="box-type text-white background-green-type">
+								Tipo de prevención 
+							</div>
+							<div class="box-type text-white background-green-pro">
+								Tipo de intervención
+							</div>
+							<div class="box-type text-white background-green-ter">
+								Tipo de prevención 
+							</div>
+						</div>
+						<div class="container padding-50 content-center">
+							<div class="box-type text-black background-text-good bad-pract">
+								Mala práctica
+							</div>
+							<div class="box-type text-black background-text-good">
+								De desarrollo 
+							</div>
+							<div class="box-type text-black background-text-good">
+								Programas
+							</div>
+							<div class="box-type text-black background-text-good">
+								Secundaria: adolescentes
+							</div>
+						</div>
+						<br>
+					</div>
+					<br>
+					<br>
+					<br>
+					<div class="padding-50">
+						<div class="background-blue-type text-white bar-toggle" onclick="texttt()">
+							Objetivo <i class="fa fa-chevron-circle-down" aria-hidden="true"></i> 
+						</div>
+						<p class="text-bar-toggle hidden-pop" id="texttt">
+							Reducir los niveles de reincidencia de los agresores sexuales mediante sesiones de apoyo psicológico, emocional y social, para que se
+							reintegren exitosamente a su comunidad. En este sentido, los agresores sexuales desarrollan un estilo de vida productivo, responsable
+							y seguro, y fortalecen las relaciones con los integrantes de su localidad: familiares, vecinos y amigos. Las acciones son coordinadas por
+							voluntarios de la comunidad y especialistas. 
+						</p>
+						<div class="background-blue-type text-white bar-toggle" onclick="textTwooo()">
+							Fundamento teórico <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</div>
+						<p class="text-bar-toggle hidden-pop" id="textTwooo">
+							Durante décadas, se han diseñado e implementado programas para reducir la reincidencia de los agresores sexuales. Una de las
+							estrategias más comunes se basa en la justicia restaurativa: garantizar una reinserción exitosa de los agresores sexuales, mediante
+							apoyo social para que fortalezcan su sentimiento de pertenencia a la comunidad y puedan encontrar un empleo, un lugar donde vivir y
+							tratamiento psicológico. Si estos factores se combinan con un seguimiento continuo del comportamiento y las acciones de los
+							beneficiarios, se incrementa la probabilidad de reducir los niveles de reincidencia delictiva, aislamiento social y rechazo por parte de la
+							sociedad. Es decir, el éxito de este programa se basa en la combinación de apoyo social y seguimiento puntual del proceso de
+							reinserción social.  
+						</p>
+						<div class="background-blue-type text-white bar-toggle" onclick="textThreeee()">
+							Factores de riesgo que atiende <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</div>
+						<p class="text-bar-toggle hidden-pop" id="textThreeee">
+							Falta de oportunidades laborales, discriminación, actitudes anti-sociales, aislamiento social.  
+						</p>
+						<div class="background-blue-type text-white bar-toggle" onclick="textFourrr()">
+							¿Cómo se hace? <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</div>
+						<div class="text-bar-toggle hidden-pop" id="textFourrr">
+							<p>
+								Este programa surgió en Canadá en 1994 y ha sido replicado en algunas regiones de Estados Unidos, Reino Unido, Irlanda y Holanda.
+								El Círculo de Apoyo y Responsabilidad se integra por el agresor sexual que se reintegra a la sociedad después de haber cumplido su
+								condena, a quien se le conoce como miembro central (core member), y por varios voluntarios de la comunidad (de cuatro a siete) que
+								están interesados en brindar apoyo social. La participación de los integrantes del círculo es voluntaria, pero se formaliza mediante un
+								acuerdo escrito que establece las responsabilidades tanto del miembro central como de los voluntarios. 
+							</p>
+							<br>
+							<p>
+								Durante los primeros meses del programa (del 1° al 3° mes), al menos un voluntario del círculo se reúne diariamente con el miembro
+								central, y los demás cada semana. El objetivo es que los voluntarios brinden apoyo al miembro central para que pueda afrontar de
+								mejor manera su reinserción social y asuma la responsabilidad de sus actos. 
+							</p>
+							<br>
+							<p>
+								Entre las acciones que los voluntarios realizan, destacan las siguientes: buscar tratamiento psicológico y social para el agresor, mediar
+								con los miembros de la comunidad para evitar cualquier tipo de discriminación o rechazo, dar seguimiento al progreso de reinserción
+								social, acompañar al miembro central en situaciones de emergencia, confrontar las actitudes antisociales del miembro central, y
+								celebrar sus logros profesionales y laborales. El programa tiene una duración aproximada de 12 meses. 
+							</p>
+							<br>
+							<p>
+								Los voluntarios son capacitados constantemente por especialistas y trabajan coordinadamente con psicólogos, asociaciones
+								comunitarias, trabajadores sociales, policías y tribunales. Los organizadores pueden reclutar a los voluntarios en asociaciones civiles y
+								religiosas de la comunidad o mediante convocatorias abiertas. Por ejemplo, los voluntarios del programa en Michigan son
+								principalmente estudiantes de universidades y escuelas públicas. 
+							</p>
+						</div>
+						<div class="background-blue-type text-white bar-toggle" onclick="textFiveee()">
+							¿Quién lo implementa? <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</div>
+						<p class="text-bar-toggle hidden-pop" id="textFiveee">
+							Gobierno y asociaciones civiles 
+						</p>
+						<div class="background-blue-type text-white bar-toggle" onclick="textSixxx()">
+							¿Cómo se evalúa? <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</div>
+						<div class="text-bar-toggle hidden-pop" id="textSixxx">
+							<p>
+								Wilson, Picheca y Prinzo (2005) realizaron una evaluación del proyecto piloto implementado en Ontario, Canadá. Posteriormente,
+								Wilson, Cortoni y McWhinnie (2009) midieron el efecto del programa nacional ejecutado en Canadá. 
+							</p>
+							<br>
+							<p>
+								Wilson et. al. (2005) utilizaron un diseño cuasi-experimental, comparando un grupo de 60 agresores sexuales beneficiarios del
+								programa (grupo de tratamiento) y un grupo de 60 agresores que no recibieron el programa (grupo de control). Para hacer comprables
+								ambos grupos, los autores se basaron en el riesgo de reincidencia, el estatus de supervisión y la participación de los agresores en algún
+								tipo de tratamiento. 
+							</p>
+							<br>
+							<p>
+								En la evaluación nacional, Wilson et. al. (2009) midieron los efectos del programa comparando 44 beneficiarios y 44 no beneficiarios de
+								los COSA con base en las variables de riesgo de reincidencia, fecha y lugar de la reinserción social, y participación previa del agresor en
+								algún tipo de tratamiento. Ambas evaluaciones encontraron una reducción significativa en los niveles de reincidencia de agresores
+								sexuales.
+							</p>
+							<br>
+							<p>
+								Por su parte, Duwe (2012) realizó una evaluación aleatoria del programa COSA implementado en Michigan, Estados Unidos. El autor
+								comparó los resultados de un grupo de 31 beneficiarios y un grupo de 31 no beneficiarios del programa. Para evaluar los índices de
+								reincidencia, se midieron las siguientes variables: 1) nuevo arresto, 2) nueva condena, 3) reinserción a prisión por un nuevo delito, 4)
+								reinserción a prisión por una falta administrativa y 5) reinserción a prisión por un nuevo delito y/o falta administrativa. 
+							</p>
+						</div>
+						<div class="background-blue-type text-white bar-toggle" onclick="textSevennn()">
+							Resultados <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</div>
+						<div class="text-bar-toggle hidden-pop" id="textSevennn">
+							<p>
+								Wilson et. al. (2005) encontraron que los participantes del programa piloto COSA tuvieron tasas significativamente más bajas de
+								reincidencia general, sexual y de violencia que el grupo de control. Específicamente, el programa redujo 70% la reincidencia sexual, 57%
+								la reincidencia violenta y 35% la reincidencia general.
+							</p>
+							<br>
+							<p>
+								Por su parte, la evaluación del programa nacional (Wilson et. al., 2009) muestra una reducción de 83% de la reincidencia sexual, 73% de la reincidencia violenta y 72% de la reincidencia general con respecto al grupo de control. 
+							</p>
+							<br>
+							<p>
+								La evaluación del programa implementado en Michigan señala una disminución significativa en los indicadores de reincidencia. Sobre
+								todo, destaca que ningún beneficiario del programa fue re-aprehendido por cometer un nuevo delito sexual.
+							</p>
+						</div>
+						<div class="background-blue-type text-white bar-toggle" onclick="textEighttt()">
+							Fuentes de información <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</div>
+						<div class="text-bar-toggle hidden-pop" id="textEighttt">
+							<p>
+								Wilson, R., J. Picheca y M. Prinzo (2005). Circles of Support & Accountability: An Evaluation of the Pilot Project in South-Central Ontario.
+								Correctional Service of Canada. Consultado en: http://www.csc-scc.gc.ca/research/092/r168_e.pdf 
+							</p>
+							<br>
+							<p>
+								Wilson, R., F. Cortoni y A. McWhinnie (2009). Circles of Support & Accountability: A Canadian National Replication of Outcome Findings.
+								Sexual Abuse: A Journal of Research and Treatment. 21(4), 412-430. 
+							</p>
+							<br>
+							<p>
+								Duwe, G. (2012). Can Circles of Support and Accountability (COSA) Work in the United States? Preliminary Results from a Randomized
+								Experiment in Minnesota. Sexual Abuse: A Journal of Research and Treatment. 25 (2), 143-165. 
+							</p>
+						</div>
+					</div>
+				</div>
+<!-- Desarrollo -->
+				<div class="container-text hidden-pop" id="desarrollo">
+					<div class="container-background background-text-des">
+						<h2>Desarrollo</h2>
+						<br>
+						<p class="text-medium">
+							Intervenciones dirigidas a atender las causas de raíz de la delincuencia que inciden sobre el
+							comportamiento del individuo a lo largo de su vida (México Evalúa, 2015; Tremblay y Craig,
+							1995). Se busca reducir los factores de riesgo, sobre todo los psicológicos y socioeconómicos,
+							que motivan a que una persona inicie o reincida en conducta delictivas. Algunos ejemplos de
+							estos factores son: violencia intrafamiliar, actitudes antisociales, consumo de drogas, desempleo
+							y desigualdad, entre otros.
+							<br>
+							<br>
+							<br>
+							<br>
+						</p>
+						<br>
+					</div>
+					<br>
+					<div class="container-box padding">
+						<div class="box background-green">
+							<p class="text-small">
+								Convertirse en un
+								hombre
+							</p>
+						</div>
+						<div class="box background-green">
+							<p class="text-small">
+								Hermanos mayores,
+								hermanas mayores
+								de América 
+							</p>
+						</div>
+						<div class="box background-green">
+							<p class="text-small">
+								Modelo de
+								Michigan para la
+								Salud 
+							</p>
+						</div>
+					</div>
+					<div class="container-box padding">
+						<div class="box background-green">
+							<p class="text-small">
+								Programas
+								anti-bullying 
+							</p>
+						</div>
+						<div class="box background-green">
+							<p class="text-small">
+								Programas de
+								concientización
+								juvenil 
+							</p>
+						</div>
+						<div class="box background-green">
+							<p class="text-small">
+								Programas
+								escolares
+								universales 
+							</p>
+						</div>
+					</div>
+				</div>
+<!-- Programas -->
+				<div class="container-text hidden-pop" id="programas">
+					<div class="container-background background-text-des">
+						<h2>Programas</h2>
+						<br>
+						<p class="text-medium">
+							Intervenciones basadas en lineamientos específicos (reglas de operación, asignación de
+							recursos, metodología de ejecución) que tienen un objetivo central previamente definido y que
+							se implementan en un contexto determinado. Por ejemplo, el programa Convertirse en un
+							hombre busca cambiar el comportamiento violento de los jóvenes de algunas escuelas públicas
+							de Chicago, mediante actividades de reflexión, desarrollo de habilidades e inteligencia
+							emocional.
+							<br>
+							<br>
+							<br>
+							<br>
+						</p>
+						<br>
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="container-box">
+						<div class="box background-green-pro">
+							<p class="text-small">
+								Convertirse en un
+								hombre
+							</p>
+						</div>
+						<div class="box background-green-pro">
+							<p class="text-small">
+								Hermanos mayores,
+								hermanas mayores
+								de América
+							</p>
+						</div>
+						<div class="box background-green-pro">
+							<p class="text-small">
+								Modelo de
+								Michigan para la
+								Salud 
+							</p>
+						</div>
+						<div class="box background-green-pro">
+							<p class="text-small">
+								Círculos de Apoyo y
+								Responsabilidad 
+							</p>
+						</div>
+						<div class="box background-green-pro">
+							<p class="text-small">
+								Intervención en los
+								mercados de drogas
+								de High Point
+							</p>
+						</div>
+					</div>
+				</div>
+<!-- Terciaria -->
+				<div class="container-text hidden-pop" id="terciaria">
+					<div class="container-background background-text-ter">
+						<h2>Terciaria</h2>
+						<br>
+						<p class="text-medium">
+							Intervenciones que buscan atender a los individuos que han cometido actos violentos o se
+							encuentran recluidos por algún delito, para evitar su reincidencia. También, atienden a las
+							víctimas de delitos y violencia, con el objetivo de evitar su revictimización o que se conviertan
+							en victimarios.
+						</p>
+						<br>
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="container-box padding">
+						<div class="box background-green-ter">
+							<p class="text-small">
+								Círculos de Apoyo
+								y Responsabilidad  
+							</p>
+						</div>
+						<div class="box background-green-ter">
+							<p class="text-small">
+								Estrategias de
+								disuasión
+								focalizada 
+							</p>
+						</div>
+						<div class="box background-green-ter">
+							<p class="text-small">
+								Programas de
+								concientización
+								juvenil 
 							</p>
 						</div>
 					</div>

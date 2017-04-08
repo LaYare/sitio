@@ -73,9 +73,21 @@
 .text-black {
 	color: #000;
 }
+.good-pract{
+	color: #008452;
+}
+
+.bad-pract{
+	color: #C73D3D;
+}
+
+.promis-pract{
+	color: #CF8A1C;
+}
 
 .text-big {
 	font-size: 20px;
+	padding: 2%;
 }
 
 .text-medium{
@@ -125,5 +137,20 @@
 
 .padding-50 {
 	padding: 0 50px 0 0;
+}
+
+.float-r{
+	float: right;
+	padding-right: 3%;
+	font-size: 1px;
+
+}
+.rotate{
+	transform: rotate(45deg);
+	margin-top: 5px;
+}
+
+#desarrollo, #programas, #terciaria{
+	margin-top: 10%;
 }
 
