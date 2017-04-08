@@ -155,7 +155,10 @@
 }
 
 .foc{
-	padding-top: 2%;
-	padding-bottom: 9%;
+	height: 6em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 5px;
 }
 
